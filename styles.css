@@ -571,6 +571,16 @@ h3 {
     gap: 1rem;
 }
 
+.contact-item a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
 .contact-item i {
     font-size: 1.5rem;
     color: var(--primary-color);

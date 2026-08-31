@@ -123,28 +123,19 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Formspree AJAX form submission with user alert
+// Contact form mailto submission
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const formData = new FormData(contactForm);
-        try {
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-            if (response.ok) {
-                alert('Thank you for your message! I will get back to you soon.');
-                contactForm.reset();
-            } else {
-                alert('Oops! There was a problem submitting your form. Please try again.');
-            }
-        } catch (error) {
-            alert('Oops! There was a problem submitting your form. Please try again.');
-        }
+        const name = contactForm.querySelector('input[name="name"]')?.value.trim() || '';
+        const email = contactForm.querySelector('input[name="email"]')?.value.trim() || '';
+        const subject = contactForm.querySelector('input[name="subject"]')?.value.trim() || '';
+        const message = contactForm.querySelector('textarea[name="message"]')?.value.trim() || '';
+
+        const mailSubject = encodeURIComponent(subject ? `[Portfolio Inquiry] ${subject}` : 'Portfolio Contact Inquiry');
+        const mailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+        window.location.href = `mailto:neurobyte.ml@gmail.com?subject=${mailSubject}&body=${mailBody}`;
     });
 }

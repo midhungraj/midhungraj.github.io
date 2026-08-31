@@ -432,10 +432,24 @@
         <div class="container">
             <h2 data-aos="fade-up">Latest Articles</h2>
             <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UIRDEHSwC3XMMBdEBjb1xA.png"
+                            alt="Understanding Word2Vec From Scratch">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">August 28, 2026</span>
+                        <h3>Understanding Word2Vec From Scratch: From Context Words to Backpropagation</h3>
+                        <p>A deep dive into Word2Vec from the ground up — exploring context windows, embeddings, and step-by-step backpropagation.</p>
+                        <a href="https://midhungraj.medium.com/understanding-word2vec-from-scratch-from-context-words-to-backpropagation-4ff55b9d7a94?sharedUserId=midhungraj"
+                            target="_blank" rel="noopener noreferrer" class="read-more">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="blog-image">
                         <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*6Yk53ZovRtH2OV1vellZ_w.png"
-                            alt="Blog 3">
+                            alt="Blog 2">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">March 20, 2024</span>
@@ -446,30 +460,16 @@
                                 class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                <article class="blog-card" data-aos="fade-up">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="blog-image">
                         <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*9junTg0X_UZiPq6kYmoJjg.png"
-                            alt="Blog 2">
+                            alt="Blog 3">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">March 15, 2024</span>
                         <h3>Normal Equation in Linear Regression Explained</h3>
                         <p>Learn how to train linear regression models without using gradient descent.</p>
                         <a href="https://medium.com/@midhungraj/normal-equation-in-linear-regression-explained-2c4f06f7474a"
-                            target="_blank" rel="noopener noreferrer" class="read-more">Read More <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-image">
-                        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*r68VRmcdeJ1Gw_Eq6v8QEQ.png"
-                            alt="Blog 1">
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-date">March 10, 2024</span>
-                        <h3>Linear Regression Explained</h3>
-                        <p>A beginner-friendly breakdown of how linear regression works under the hood.</p>
-                        <a href="https://medium.com/@midhungraj/linear-regression-explained-1edc56dbe98b"
                             target="_blank" rel="noopener noreferrer" class="read-more">Read More <i
                                 class="fas fa-arrow-right"></i></a>
                     </div>
@@ -486,7 +486,7 @@
                 <div class="contact-info" data-aos="fade-right">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>neurobyte.ml@gmail.com</span>
+                        <a href="mailto:neurobyte.ml@gmail.com">neurobyte.ml@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -505,7 +505,7 @@
                             aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xpwrweaq" method="POST" data-aos="fade-left">
+                <form class="contact-form" action="mailto:neurobyte.ml@gmail.com" method="GET" data-aos="fade-left">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
                     </div>
@@ -518,7 +518,7 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary">Send Message</button>
+                    <button type="submit" class="btn primary"><i class="fas fa-paper-plane"></i> Send Email</button>
                 </form>
             </div>
         </div>
